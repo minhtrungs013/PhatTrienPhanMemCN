@@ -74,10 +74,13 @@
 /*home filter */
 .home-filter{
     background-color: rgb(156, 156, 156);
-    display: flex;
+    display: inline-block;
+    width: 100%;
     align-items: center;
     padding: 12px 10px;
     border-radius: 2px;
+    font-size: 2rem;
+    text-align: center;
 
 }
 .home-filter-text{
@@ -85,6 +88,89 @@
     color: rgb(44, 44, 44);
     font-weight: 600;
 }
+/* select ton vinh */
+.home-search{
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0;
+}
+.home-heading__text{
+    display: block;
+    padding-bottom: 25px;
+}
+.home-search__input{
+    width: 50%;
+    height: 38px;
+    border-radius: 20px;
+    border: none;
+    border-color: #f5f5f5;
+    font-size: 1.6rem;
+    padding: 8px 16px;
+}
+.home-search__icon{
+    display: inline-block;
+    font-size: 1.8rem;
+    height: 38px;
+    width:  100px;
+    background-color: #ff0000;
+    text-align: center;
+    align-items: center;
+    padding-top: 8px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: rgb(230, 230, 230);
+}
+.home-poduct__icon-ac{
+    height: 20px;
+    width: 20px;
+    color: #1eff00;
+    font-size: 1.8rem;
+}
+
+.home-poduct__icon-wr{
+    height: 20px;
+    width: 20px;
+    color: #ff3300;
+    font-size: 1.5rem;
+}
+.home-poduct__icon-active{
+    display: none;
+}
+
+.home-poduct__icon-btn{
+    height: 20px;
+    width: 20px;
+    color: #ffffff;
+    font-size: 1.8rem;
+    padding-left: 10px;
+}
+.home-list{
+    width: 100%;
+    display: inline-flex;
+
+}
+.check-item{
+    width: 20px;
+    height: 20px;
+}
+.home-item{
+    margin-left: 20px;
+    background-color: #fcfcfc;
+    font-size: 1.6rem;
+    color: #000000;
+    font-weight: 400;
+}
+.home-TV__icon{
+    font-size: 1.4rem;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+}
+.home-poduct__link a {
+    text-decoration: none;
+}
+
 .home-poduct{
     margin: 5px 0 10px 0;
     display: block;
@@ -94,6 +180,10 @@
     max-height: 50vh;
     overflow-y: auto;
 
+}
+.home-poducts{
+    max-height: none !important;
+    overflow-y:hidden; 
 }
 .home-poduct--list{
     background-color: #3c4746;
@@ -109,6 +199,7 @@
     padding: 10px 0;
    
 }
+
 .home-poduct__item:last-child{
     border-right: none ;
 }
@@ -216,4 +307,34 @@
     border-radius: 20px;
     padding-top: 4px;
     color: #f32b2b;
+}
+/* chi tiêt tv */
+.details__list{
+    display: inline-block;
+    margin-left: 160px;
+   
+}
+.details__item{
+    text-decoration: none;
+    list-style: none;
+    padding: 16px;
+    font-size: 1.8rem;
+}
+
+.details__item-imput{
+    height: 34px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 4px 8px;
+    margin-top: 10px;
+}
+.details__item-select{
+    height: 34px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 4px 8px;
+    margin-top: 10px;
+    margin-left: 0;
 }
