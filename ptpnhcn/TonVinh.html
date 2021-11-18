@@ -679,24 +679,24 @@
     </div>
 </div>
 <script>
-const EXlupbtns = document.querySelectorAll('.js-btn-EX_load')
-const EXlup = document.querySelector('.js-modal-EX_load')
-const EXlcloseup = document.querySelector('.js-footer-EX_load')
-const tiskerformEXlup = document.querySelector('.js-EX-form_load')
-    function showbuytickets(){
-        EXlup.classList.add('modal__open')
+    const EXlupbtns = document.querySelectorAll('.js-btn-EX_load')
+    const EXlup = document.querySelector('.js-modal-EX_load')
+    const EXlcloseup = document.querySelector('.js-footer-EX_load')
+    const tiskerformEXlup = document.querySelector('.js-EX-form_load')
+        function showbuytickets(){
+            EXlup.classList.add('modal__open')
+        }
+        function hidenbuytickets(){
+            EXlup.classList.remove('modal__open')
+        }
+    for(const EXlupbtn of EXlupbtns){
+        EXlupbtn.addEventListener('click', showbuytickets)
     }
-    function hidenbuytickets(){
-        EXlup.classList.remove('modal__open')
-    }
-for(const EXlupbtn of EXlupbtns){
-    EXlupbtn.addEventListener('click', showbuytickets)
-}
-
-EXlcloseup.addEventListener('click', hidenbuytickets)
-tiskerformEXlup.addEventListener('click',function(event){
-    event.stopPropagation()
-})
-</script>
+    
+    EXlcloseup.addEventListener('click', hidenbuytickets)
+    tiskerformEXlup.addEventListener('click',function(event){
+        event.stopPropagation()
+    })
+    </script>
 </body>
 </html>
